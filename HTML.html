@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB Boosters Pro - SMM Panel</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">RB<span>Boosters</span> Pro</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#services">Services</a>
+            <a href="#features">Features</a>
+            <a href="#support">Support</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="header">
+        <h1>Boost Your Instagram Presence</h1>
+        <p>Get real followers, likes, and views instantly with our premium SMM services.</p>
+        <a href="#services" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="service-card">
+            <i class="fas fa-users service-icon"></i>
+            <h3>Instagram Followers</h3>
+            <div class="price">$5.00/1k</div>
+            <p>High-quality followers with instant delivery.</p>
+            <a href="https://wa.me/+263776332994?text=Hi!%20I%20want%20to%20order%20followers" class="cta-button" target="_blank">Order Now</a>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-heart service-icon"></i>
+            <h3>Instagram Likes</h3>
+            <div class="price">$3.00/1k</div>
+            <p>Instant likes from active users.</p>
+            <a href="https://wa.me/263776332994?text=Hi!%20I%20want%20to%20order%20likes" class="cta-button" target="_blank">Order Now</a>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-eye service-icon"></i>
+            <h3>Instagram views</h3>
+            <div class="price">$2.50/1k</div>
+            <p>High-retention views for your videos.</p>
+            <a href="https://wa.me/263776332994?text=Hi!%20I%20want%20to%20order%20views" class="cta-button" target="_blank">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="feature-card">
+            <i class="fas fa-bolt feature-icon"></i>
+            <h4>Instant Delivery</h4>
+            <p>Start your order within seconds.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-shield-alt feature-icon"></i>
+            <h4>100% Safe</h4>
+            <p>Secure and confidential service.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-headset feature-icon"></i>
+            <h4>24/7 Support</h4>
+            <p>Always here to help you.</p>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/263776332994" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("responsive");
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
